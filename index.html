@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chelle Vergara — Websites, Sales Funnels & Intuitive Energy Work</title>
+<meta name="description" content="High-converting websites, sales funnels, and booking systems for coaches, course creators, and service pros — plus Tarot, Reiki and Seraphim Blueprint sessions.">
+<meta property="og:title" content="Chelle Vergara — 10.10 Specials">
+<meta property="og:description" content="Premium websites that book & sell for you — so you can stay present.">
+<meta property="og:image" content="https://chellevergara.com/wp-content/uploads/2026/10/Gemini_Generated_Image_2e8lo12e8lo12e8l.png">
+<meta name="theme-color" content="#0d1416">
+<link rel="icon" href="https://chellevergara.com/wp-content/uploads/2026/10/chelle-2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d1416;--bg2:#0f181a;--card:#132023;--ink:#e6eded;--muted:#a9b8ba;--dim:#6f8285;
+  --teal:oklch(0.8 0.11 185);--teal-ink:#06201f;--violet:oklch(0.8 0.11 300);--violet-ink:#1b1033;
+  --gold:oklch(0.85 0.11 85);--gold-ink:#1a1306;--pink:oklch(0.84 0.1 350);
+  --line:rgba(255,255,255,0.08);--serif:'Instrument Serif',Georgia,serif;--mono:'Geist Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--teal);text-decoration:none}
+a:hover{color:oklch(0.9 0.08 185)}
+button{font:inherit;color:inherit}
+h1,h2,h3{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding-left:20px;padding-right:20px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--dim)}
+.serif{font-family:var(--serif);font-weight:400}
+.h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.4vw,54px);line-height:1.05;text-wrap:balance}
+.dot{width:6px;height:6px;border-radius:50%;flex:none;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+section[id],footer[id]{scroll-margin-top:70px}
+
+/* Promo */
+.promo{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,#1b1530,#20142a 50%,#1b1530);border-bottom:1px solid rgba(232,200,120,.25)}
+.promo .wrap{padding-top:10px;padding-bottom:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 22px;font-size:14px}
+.tag{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--gold-ink);background:var(--gold);padding:3px 8px;border-radius:4px;font-weight:500}
+.cd{display:flex;align-items:center;gap:6px;font-family:var(--mono)}
+.cd b{background:rgba(255,255,255,.08);padding:4px 7px;border-radius:4px;color:#fff;font-weight:400}
+.cd b:last-child{color:var(--gold)}
+.promo-link{color:var(--gold);font-weight:500;border-bottom:1px solid oklch(0.85 0.11 85 / .5)}
+
+/* Nav */
+nav.wrap{padding-top:18px;padding-bottom:18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px}
+.logo img{height:clamp(30px,6vw,40px);width:auto;max-width:200px;object-fit:contain}
+.navlinks{display:flex;align-items:center;gap:clamp(14px,3vw,26px);font-size:14px;flex-wrap:wrap}
+.navlinks a{color:var(--muted)}
+.navlinks a:hover{color:var(--ink)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;gap:8px;border:0;cursor:pointer;font-weight:600;font-size:15px;padding:15px 26px;border-radius:999px;min-height:48px;transition:background .2s,transform .15s}
+.btn:active{transform:scale(.98)}
+.btn-teal{background:var(--teal);color:var(--teal-ink)}.btn-teal:hover{background:oklch(0.86 0.1 185);color:var(--teal-ink)}
+.btn-gold{background:var(--gold);color:var(--gold-ink)}.btn-gold:hover{background:oklch(0.89 0.1 85);color:var(--gold-ink)}
+.btn-violet{background:var(--violet);color:var(--violet-ink)}.btn-violet:hover{background:oklch(0.86 0.09 300);color:var(--violet-ink)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid rgba(255,255,255,.2);font-weight:500}.btn-ghost:hover{background:rgba(255,255,255,.06);color:var(--ink)}
+.btn-sm{padding:9px 16px;font-size:14px;min-height:40px;font-weight:500}
+.btn-block{width:100%;border-radius:12px;padding:18px 22px;font-size:16px}
+
+/* Hero */
+.hero{padding-top:clamp(20px,4vw,40px);padding-bottom:clamp(60px,8vw,90px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(36px,5vw,56px);align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--teal);border:1px solid oklch(0.8 0.11 185 / .3);padding:6px 12px;border-radius:999px}
+.eyebrow .dot{background:var(--teal)}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,6vw,76px);line-height:1.04;letter-spacing:-.01em;margin:22px 0;text-wrap:balance}
+.hero h1 em:first-child{color:oklch(0.82 0.1 185)}.hero h1 em:last-child{color:var(--pink)}
+.lead{font-size:18px;line-height:1.6;color:var(--muted);max-width:560px;margin:0 0 34px;text-wrap:pretty}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.trust{display:flex;flex-wrap:wrap;gap:20px 28px;margin-top:44px;padding-top:26px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.trust div{display:flex;flex-direction:column;gap:4px}
+.trust span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--dim)}
+.portrait{position:relative;width:100%;max-width:448px;justify-self:center}
+.portrait img{width:100%;max-height:560px;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:var(--card)}
+.float-card{position:absolute;left:-18px;bottom:24px;background:#101b1e;border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 16px;width:min(250px,78%);box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.float-card .mono{font-size:11px;letter-spacing:.08em;margin-bottom:10px}
+.float-card div.row{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin-top:8px}
+.float-card .row span:last-child{color:var(--teal)}
+.float-pill{position:absolute;right:-10px;top:24px;background:#1b1530;border:1px solid oklch(0.8 0.11 300 / .35);border-radius:999px;padding:8px 14px;color:#e9dff2;font-family:var(--serif);font-style:italic;font-size:17px}
+
+/* Tabs */
+.seg{display:flex;flex-wrap:wrap;background:#0a1113;border:1px solid var(--line);border-radius:24px;padding:5px;gap:4px;max-width:100%}
+.seg button{flex:1 1 auto;border:0;cursor:pointer;font-size:14px;font-weight:500;padding:11px clamp(14px,3vw,20px);border-radius:999px;background:transparent;color:var(--muted);transition:all .25s;min-height:44px}
+.seg button[aria-selected="true"].t-teal{background:var(--teal);color:var(--teal-ink)}
+.seg button[aria-selected="true"].t-violet{background:var(--violet);color:var(--violet-ink)}
+.seg button[aria-selected="true"].t-gold{background:var(--gold);color:var(--gold-ink)}
+[hidden]{display:none!important}
+.panel{animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* Services */
+.services{border-top:1px solid rgba(255,255,255,.07);background:var(--bg2)}
+.services .wrap{padding-top:clamp(60px,8vw,90px);padding-bottom:clamp(60px,8vw,90px)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:36px}
+.sub{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:baseline;margin-bottom:24px}
+.sub p{margin:0;font-size:17px;color:var(--muted);max-width:620px;line-height:1.55;text-wrap:pretty}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(22px,3vw,30px);display:flex;flex-direction:column;gap:12px;transition:border-color .2s}
+.card:hover{border-color:oklch(0.8 0.11 185 / .5)}
+.card .code{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--teal)}
+.card h3{font-size:21px;font-weight:500}
+.card p{margin:0;font-size:15px;line-height:1.6;color:var(--muted)}
+.card.del{background:linear-gradient(160deg,#1d1630,#191424);border-color:oklch(0.8 0.11 300 / .2)}
+.card.del:hover{border-color:oklch(0.85 0.11 85 / .55)}
+.card.del .code{color:var(--pink)}
+.card.del h3{font-family:var(--serif);font-weight:400;font-size:25px;color:#f3ecf6}
+.card.del p{color:#c9bfd0}
+
+/* Process */
+.process{padding-top:clamp(56px,7vw,80px);padding-bottom:clamp(56px,7vw,80px)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.step{background:var(--bg);padding:26px;display:flex;flex-direction:column;gap:10px}
+.step-top{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+.step-top span:first-child{font-family:var(--mono);font-size:12px;color:var(--teal)}
+.pill{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px solid rgba(255,255,255,.12);padding:3px 8px;border-radius:999px}
+.step h3{font-size:18px;font-weight:500;margin-top:4px}
+.step p{margin:0;font-size:14px;line-height:1.6;color:var(--muted)}
+
+/* Offer */
+.offer{padding-top:20px;padding-bottom:clamp(70px,8vw,100px)}
+.res-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.res{display:flex;gap:14px;align-items:flex-start;background:#111b1e;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.res .n{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid oklch(0.85 0.11 85 / .5);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px}
+.res b{display:block;font-size:15px;font-weight:500;line-height:1.4}
+.res small{display:block;font-size:13px;color:var(--muted);line-height:1.5;margin-top:4px}
+.ocard{border-radius:24px;padding:clamp(22px,5vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:clamp(28px,4vw,48px)}
+.ocard.web{background:linear-gradient(140deg,#14202a,#10292a);border:1px solid oklch(0.8 0.11 185 / .25)}
+.ocard.del{background:linear-gradient(140deg,#1d1530,#21152a 60%,#1a1424);border:1px solid oklch(0.8 0.11 300 / .3)}
+.badge{display:inline-flex;gap:8px;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.06em;padding:5px 10px;border-radius:999px;margin-bottom:18px;line-height:1.4}
+.badge.gold{color:var(--gold-ink);background:var(--gold)}.badge.gold .dot{background:var(--gold-ink)}
+.badge.pink{color:var(--violet-ink);background:var(--pink)}.badge.pink .dot{background:var(--violet-ink)}
+.ocard h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.2vw,52px);line-height:1.05;margin-bottom:26px;text-wrap:balance}
+.ocard.del h3{color:#f3ecf6}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.5}
+.checks li::before{content:"✓";flex:none;margin-top:3px;width:18px;height:18px;border-radius:50%;background:oklch(0.8 0.11 185 / .15);color:var(--teal);display:flex;align-items:center;justify-content:center;font-size:11px}
+.ocard.del .checks li{color:#efe7f3}
+.ocard.del .checks li::before{content:"✦";background:oklch(0.85 0.11 85 / .15);color:var(--gold)}
+.price{background:rgba(8,14,16,.55);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:clamp(20px,3vw,30px);display:flex;flex-direction:column;gap:20px;align-self:start}
+.ocard.del .price{background:rgba(14,9,22,.55);border-color:oklch(0.8 0.11 300 / .25)}
+.amt{display:flex;align-items:baseline;gap:10px 12px;flex-wrap:wrap;margin-top:-10px}
+.amt strong{font-family:var(--serif);font-weight:400;font-size:clamp(46px,6vw,64px);line-height:1}
+.amt s{font-size:18px;color:#7d8f92}
+.save{font-family:var(--mono);font-size:11px;color:var(--gold-ink);background:var(--gold);padding:3px 8px;border-radius:4px}
+.split{font-size:14px;line-height:1.5;color:#c4cdd0;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.split strong{color:var(--ink)}
+.slots-top{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin-bottom:10px}
+.slots-top span:first-child{font-family:var(--mono);letter-spacing:.06em;color:var(--muted)}
+.bars{display:grid;gap:8px}
+.bars i{height:10px;border-radius:999px;background:rgba(255,255,255,.1);transition:background .4s}
+.bars.web{grid-template-columns:repeat(3,1fr)}.bars.web i.on{background:var(--gold)}
+.bars.del{grid-template-columns:repeat(5,1fr)}.bars.del i.on{background:var(--violet)}
+.msg{display:flex;gap:10px;align-items:center;font-size:14px;padding:12px 14px;border-radius:10px;background:oklch(0.8 0.11 185 / .1);border:1px solid oklch(0.8 0.11 185 / .3)}
+.msg .dot{background:var(--teal)}
+.ocard.del .msg{background:oklch(0.8 0.11 300 / .12);border-color:oklch(0.8 0.11 300 / .3);color:#e9dff2}
+.ocard.del .msg .dot{background:var(--pink)}
+.fine{font-size:13px;line-height:1.55;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+
+/* FAQ */
+.faq{border-top:1px solid rgba(255,255,255,.07);background:var(--bg2)}
+.faq .inner{max-width:880px;margin:0 auto;padding:clamp(60px,8vw,90px) 20px clamp(70px,8vw,100px)}
+.qa{border-bottom:1px solid rgba(255,255,255,.1)}
+.qa:first-child{border-top:1px solid rgba(255,255,255,.1)}
+.qa button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;background:transparent;border:0;color:var(--ink);font-size:clamp(16px,2vw,18px);font-weight:500;text-align:left;padding:22px 0;cursor:pointer;min-height:56px}
+.qa .plus{flex:none;width:30px;height:30px;border-radius:50%;border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;color:var(--teal);font-size:18px;transition:transform .3s}
+.qa.open .plus{transform:rotate(45deg)}
+.qa .a{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .35s ease,opacity .35s}
+.qa.open .a{grid-template-rows:1fr;opacity:1}
+.qa .a>div{overflow:hidden}
+.qa .a p{margin:0 0 24px;font-size:16px;line-height:1.7;color:var(--muted);max-width:720px}
+
+/* Footer */
+footer.wrap{padding-top:clamp(60px,8vw,90px);padding-bottom:130px}
+.cta-card{border-radius:24px;background:linear-gradient(140deg,#1c1530,#14202a 55%,#10292a);border:1px solid oklch(0.85 0.11 85 / .25);padding:clamp(32px,6vw,72px) clamp(22px,5vw,60px);text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+.cta-card h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,5vw,62px);line-height:1.05;max-width:820px;text-wrap:balance}
+.cta-card h2 em{color:var(--gold)}
+.cta-card p{margin:0;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:#c4cdd0;line-height:1.6}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;padding:56px 0 40px}
+.fcol{display:flex;flex-direction:column;gap:12px;font-size:14px}
+.fcol a{color:#c4cdd0}.fcol a:hover{color:var(--ink)}
+.fcol .mono{font-size:11px;margin-bottom:2px}
+.fbrand img{height:36px;width:auto;max-width:180px;object-fit:contain;object-position:left}
+.fbrand p{margin:0;font-size:14px;line-height:1.6;color:var(--muted);max-width:260px}
+.copy{border-top:1px solid rgba(255,255,255,.07);padding-top:24px;font-size:13px;color:var(--dim);text-align:center;line-height:1.6}
+
+/* Sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px;padding-bottom:max(12px,env(safe-area-inset-bottom));transform:translateY(140%);transition:transform .4s ease}
+.sticky.show{transform:none}
+.sticky .bar{max-width:820px;margin:0 auto;background:rgba(16,24,27,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:12px 12px 12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.sticky .txt{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1 1 280px}
+.sticky .txt b{font-size:14px;font-weight:500;line-height:1.35}
+.sticky .txt small{font-size:12px;color:var(--pink);line-height:1.4}
+.sticky .txt small span{font-family:var(--mono);color:#c4cdd0}
+.sticky .btn{border-radius:10px;padding:13px 20px;flex:1 0 auto}
+
+/* Calendly modal */
+.modal{position:fixed;inset:0;z-index:100;background:rgba(4,8,10,.75);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:clamp(8px,3vw,24px)}
+.modal-box{position:relative;width:100%;max-width:1000px;height:min(760px,92vh);height:min(760px,92dvh);background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.6)}
+.modal-box iframe{display:block;width:100%;height:100%;border:0}
+.modal-close{position:absolute;top:10px;right:10px;z-index:2;width:40px;height:40px;border-radius:50%;border:0;background:#1a2326;color:#fff;cursor:pointer;font-size:22px;line-height:1}
+.modal-close:hover{background:#2a3639}
+.modal-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#5b6866;font-size:14px;z-index:0}
+.modal-box iframe{position:relative;z-index:1}
+body.locked{overflow:hidden}
+
+/* Responsive */
+@media (max-width:900px){
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .res-steps{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .grid2{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .fbrand{grid-column:1/-1}
+  .promo .wrap{gap:6px 14px;font-size:13px}
+  .promo .wrap>.promo-link{display:none}
+  .navlinks a:not(.btn){display:none}
+  .float-card{left:12px}
+  .float-pill{right:10px}
+}
+@media (max-width:480px){
+  .steps{grid-template-columns:1fr}
+  .ctas .btn{width:100%}
+  .lead{font-size:17px}
+  .hero h1{line-height:1.06}
+  .fgrid{grid-template-columns:1fr}
+  .modal{padding:0}
+  .modal-box{height:100vh;height:100dvh;border-radius:0}
+  .sticky .txt small{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="promo" role="region" aria-label="10.10 promotion">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center">
+      <span class="tag">10.10 SALE</span>
+      <span style="color:#f1e9f3">Web Funnel Package — <span style="color:var(--pink);font-weight:500"><span data-web-label>3 Slots</span> remaining</span></span>
+    </div>
+    <div class="cd" aria-live="off"><span style="font-size:12px;color:#c9bfd0;margin-right:4px">ENDS IN</span><b data-cd="d">0d</b><b data-cd="h">00h</b><b data-cd="m">00m</b><b data-cd="s">00s</b></div>
+    <a href="https://calendly.com/rmrvergara/10-10-alignment-review-slot-reservation" class="promo-link js-book">Claim yours →</a>
+  </div>
+</div>
+
+<nav class="wrap" aria-label="Main">
+  <a href="#" class="logo" aria-label="Chelle Vergara home"><img src="https://chellevergara.com/wp-content/uploads/2026/10/chelle-2.png" alt="Chelle Vergara"></a>
+  <div class="navlinks">
+    <a href="#services">Services</a>
+    <a href="#offer">10.10 Offer</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://calendly.com/rmrvergara/10-10-alignment-review-slot-reservation" class="btn btn-ghost btn-sm js-book">Reserve now</a>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <div>
+    <div class="eyebrow"><span class="dot"></span>FOR COACHES · COURSE CREATORS · HEALERS</div>
+    <h1>Premium websites that <em>book &amp; sell</em> for you — so you can stay <em>present</em>.</h1>
+    <p class="lead">I build high-converting websites, sales funnels, and booking systems for coaches, course creators, and service pros—combining strategic precision with intuitive energy.</p>
+    <div class="ctas">
+      <a href="https://calendly.com/rmrvergara/10-10-alignment-review-slot-reservation" class="btn btn-teal js-book">Reserve 1 of <span data-web-n>3</span>&nbsp;October Slots →</a>
+      <a href="#services" class="btn btn-ghost">See What I Build</a>
+    </div>
+    <div class="trust">
+      <div><span>SPECIALTY</span>Websites &amp; Sales Funnels</div>
+      <div><span>10.10 PACKAGE</span>Automated Booking Engine</div>
+      <div><span>INTUITIVE SIDE</span>Tarot · Reiki · Seraphim</div>
+    </div>
+  </div>
+  <div class="portrait">
+    <img src="https://chellevergara.com/wp-content/uploads/2026/10/Gemini_Generated_Image_2e8lo12e8lo12e8l.png" alt="Chelle Vergara" width="448" height="560" fetchpriority="high">
+    <div class="float-card" aria-hidden="true">
+      <div class="mono">WHILE YOU WERE IN SESSION</div>
+      <div class="row"><span>Discovery call booked</span><span>✓</span></div>
+      <div class="row"><span>Deposit collected</span><span>✓</span></div>
+      <div class="row"><span>Welcome email sent</span><span>✓</span></div>
+    </div>
+    <div class="float-pill" aria-hidden="true">precision + intuition</div>
+  </div>
+</header>
+
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div style="max-width:560px">
+        <div class="mono" style="margin-bottom:14px">SERVICES</div>
+        <h2 class="h2">Two sides of the same practice.</h2>
+      </div>
+      <div class="seg" role="tablist" data-tabs="svc">
+        <button role="tab" class="t-teal" aria-selected="true" data-tab="sys">Systems &amp; Web Design</button>
+        <button role="tab" class="t-violet" aria-selected="false" data-tab="del">The Delulu Corner</button>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="svc:sys" role="tabpanel">
+      <div class="sub">
+        <p>High-converting strategy: every page, form, and automation is mapped, built, and tested so your business runs on autopilot.</p>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--teal)">// high-converting strategy</span>
+      </div>
+      <div class="grid2">
+        <div class="card"><span class="code">SYS—01</span><h3>Premium Websites</h3><p>Conversion-led design and copy built for coaches and service pros. Fast, accessible, mobile-first.</p></div>
+        <div class="card"><span class="code">SYS—02</span><h3>Booking &amp; Payment Systems</h3><p>Calendars, deposits, checkouts, and reminders wired together so clients book and pay automatically.</p></div>
+        <div class="card"><span class="code">SYS—03</span><h3>Sales Funnels &amp; Email</h3><p>Opt-ins, sales pages, and nurture sequences built to turn cold traffic into booked clients on autopilot.</p></div>
+        <div class="card"><span class="code">SYS—04</span><h3>System Diagnostics &amp; Cleanup</h3><p>A full audit of your current tech stack—fixing broken links, leaky funnels, and redundant tools.</p></div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="svc:del" role="tabpanel" hidden>
+      <div class="sub">
+        <p style="color:#c9bfd0">Intuitive &amp; energy work for when strategy needs soul. Book standalone sessions or pair them directly with your web launch.</p>
+        <span class="serif" style="font-style:italic;font-size:19px;color:var(--gold)">a little delulu is the solulu</span>
+      </div>
+      <div class="grid2">
+        <div class="card del"><span class="code">DELULU · I</span><h3>Intuitive Channeling &amp; Tarot</h3><p>Deep-dive readings connecting directly with your spirit guides, higher self, and tarot cards for clarity on business, life, and decision-making.</p></div>
+        <div class="card del"><span class="code">DELULU · II</span><h3>Reiki Energy Sessions</h3><p>Distance or in-person Reiki to release stuck energy, reduce stress, and restore calm—especially around major launches.</p></div>
+        <div class="card del"><span class="code">DELULU · III</span><h3>Seraphim Blueprint</h3><p>Advanced angelic energy attunements for high-frequency healing, clarity, and personal transformation.</p></div>
+        <div class="card del"><span class="code">DELULU · IV</span><h3>Brand &amp; Launch Energy Readings</h3><p>An intuitive audit on your offer, pricing, name, and launch timing—bringing energetic alignment to your business strategy.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="wrap process">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:28px">
+    <div class="mono">THE PROTOCOL</div>
+    <div style="font-family:var(--mono);font-size:12px;color:var(--teal)">14 DAYS · START TO LIVE</div>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="step-top"><span>01 / STRATEGY</span><span class="pill">Days 1–3</span></div><h3>Strategy &amp; Mapping</h3><p>We map your offer, ideal client journey, and exact sales path so every section converts.</p></div>
+    <div class="step"><div class="step-top"><span>02 / DESIGN</span><span class="pill">Days 4–8</span></div><h3>High-Converting Design</h3><p>Persuasive copy and custom visual design built to turn casual visitors into booked clients.</p></div>
+    <div class="step"><div class="step-top"><span>03 / AUTOMATE</span><span class="pill">Days 9–12</span></div><h3>Automations &amp; Tech Setup</h3><p>Booking calendar, payment gateway, and automated email follow-ups connected and tested end-to-end.</p></div>
+    <div class="step"><div class="step-top"><span>04 / LAUNCH</span><span class="pill">Day 14</span></div><h3>Go Live &amp; Stay Present</h3><p>Live site launch, recorded video walkthrough, and 30 days of post-launch tech support.</p></div>
+  </div>
+</section>
+
+<section id="offer" class="wrap offer">
+  <div class="sec-head" style="margin-bottom:24px;gap:20px">
+    <div>
+      <div class="mono" style="color:var(--gold);margin-bottom:12px">10.10 SPECIALS · ENDS IN <span data-cd-inline>0D 00:00:00</span></div>
+      <h2 class="h2" style="font-size:clamp(32px,4.2vw,50px)">Choose your 10.10 offer.</h2>
+    </div>
+    <div class="seg" role="tablist" data-tabs="offer">
+      <button role="tab" class="t-gold" aria-selected="true" data-tab="web">Web &amp; Funnel Promo</button>
+      <button role="tab" class="t-violet" aria-selected="false" data-tab="del">The Delulu 10.10 Session</button>
+    </div>
+  </div>
+
+  <div class="res-steps">
+    <div class="res"><span class="n">1</span><div><b>Select a time &amp; fill out the 2-minute project intake</b><small>Free reservation request — no payment required today.</small></div></div>
+    <div class="res"><span class="n">2</span><div><b>Alignment Review</b><small>I will review your project within 12 hours to ensure we're a great fit.</small></div></div>
+    <div class="res"><span class="n">3</span><div><b>Receive approval &amp; payment details</b><small>GCash / Bank Transfer details sent via email to lock in your slot.</small></div></div>
+  </div>
+
+  <div class="panel ocard web" data-panel="offer:web" role="tabpanel">
+    <div>
+      <div class="badge gold"><span class="dot"></span>ONLY <span data-web-n>3</span>&nbsp;<span data-web-word>SLOTS</span>&nbsp;AVAILABLE — OCTOBER LAUNCH RUN</div>
+      <h3>The 14-Day Automated Landing Page Package</h3>
+      <ul class="checks">
+        <li>₱19,997 Pay-In-Full (Save ₱25,000) OR 2 payments of ₱12,500</li>
+        <li>Custom-designed single landing page (mobile-first)</li>
+        <li>Booking calendar with automated email reminders</li>
+        <li>GCash / Maya / Bank Transfer payment workflow setup</li>
+        <li>Lead opt-in + 3-email automated welcome sequence</li>
+        <li>Live in 14 days + 30 days of post-launch support</li>
+      </ul>
+    </div>
+    <div class="price">
+      <div class="mono" style="font-size:11px;letter-spacing:.08em;color:var(--muted)">PAY IN FULL</div>
+      <div class="amt"><strong>₱19,997</strong><s>₱45,000</s><span class="save">SAVE ₱25,000</span></div>
+      <div class="split">or <strong>2 payments of ₱12,500</strong> (₱24,997 total — 50% deposit to lock in)</div>
+      <div>
+        <div class="slots-top"><span>OCTOBER SLOTS</span><span style="color:var(--pink);font-weight:500"><span data-web-label>3 Slots</span> left</span></div>
+        <div class="bars web" data-bars="web"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+      </div>
+      <a href="https://calendly.com/rmrvergara/10-10-alignment-review-slot-reservation" class="btn btn-gold btn-block js-book" data-claim="web">Reserve 1 of 3 October Slots →</a>
+      <div class="msg" data-msg="web" hidden><span class="dot"></span><span></span></div>
+      <div class="fine">Free reservation request · No payment required until your project is reviewed &amp; confirmed.</div>
+    </div>
+  </div>
+
+  <div class="panel ocard del" data-panel="offer:del" role="tabpanel" hidden>
+    <div>
+      <div class="badge pink"><span class="dot"></span><span data-del-n>5</span>&nbsp;EXCLUSIVE 10.10&nbsp;<span data-del-word>SLOTS</span>&nbsp;— ₱1,997</div>
+      <h3>60-Minute Soul &amp; Strategy Alignment Intensive</h3>
+      <ul class="checks">
+        <li>30-Min Intuitive Channeling &amp; Spirit Guide Clarity</li>
+        <li>30-Min Distance Reiki &amp; Seraphim Blueprint Reset</li>
+        <li>Personal Zoom Session recording + audio summary</li>
+        <li>Payment via GCash or Bank Transfer upon confirmation</li>
+      </ul>
+    </div>
+    <div class="price">
+      <div class="mono" style="font-size:11px;letter-spacing:.08em;color:#c9bfd0">10.10 SESSION RATE</div>
+      <div class="amt"><strong style="color:#f3ecf6">₱1,997</strong><s style="color:#8e8299">₱3,500</s><span class="save">SAVE ₱1,503</span></div>
+      <div>
+        <div class="slots-top"><span style="color:#c9bfd0">10.10 SESSIONS</span><span style="color:var(--gold);font-weight:500"><span data-del-label>5 Slots</span> left</span></div>
+        <div class="bars del" data-bars="del"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+      </div>
+      <a href="https://calendly.com/rmrvergara/10-10-alignment-review-slot-reservation" class="btn btn-violet btn-block js-book" data-claim="del">Request Your Alignment Session →</a>
+      <div class="msg" data-msg="del" hidden><span class="dot"></span><span></span></div>
+      <div class="fine" style="color:#c9bfd0">Submit your preferred time · Payment details sent upon approval.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="inner">
+    <div class="mono" style="margin-bottom:14px">FAQ</div>
+    <h2 class="h2" style="margin-bottom:40px">Before you claim a slot.</h2>
+    <div data-faq>
+      <div class="qa open"><button aria-expanded="true"><span>I'm not techy. Will I be able to update my own site?</span><span class="plus">+</span></button><div class="a"><div><p>Yes! You will receive a personalized video walkthrough showing you step-by-step how to manage your page. Changing text, swapping photos, and updating prices takes minutes—and you get 30 days of post-launch support for peace of mind.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false"><span>How can a premium site really launch in 14 days?</span><span class="plus">+</span></button><div class="a"><div><p>Because it is one focused, conversion-engineered page using a proven design framework. You complete a guided intake form, we have one quick strategy call, and I build against a streamlined system—eliminating fluff and endless delays.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false"><span>What does 'automate bookings and sales' actually mean?</span><span class="plus">+</span></button><div class="a"><div><p>A prospect can view your page, select an available slot on your calendar, pay their deposit or full payment via GCash, Maya, or Bank Transfer, and receive their automated confirmation email—all without you typing a single DM.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false"><span>Do I have to be into Tarot, Reiki, or intuitive work to hire you for web design?</span><span class="plus">+</span></button><div class="a"><div><p>Not at all. 'The Delulu Corner' is a separate menu for clients who want energy work. Systems &amp; web clients get pure conversion strategy, crisp design, and seamless logic—no crystals required.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false"><span>I already have a website. Is this still for me?</span><span class="plus">+</span></button><div class="a"><div><p>Yes! If your current site is not actively booking calls or closing sales, this single-page landing funnel acts as a high-converting 'front door' for your primary offer.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false"><span>What happens after 10.10 — and what are the payment options?</span><span class="plus">+</span></button><div class="a"><div><p>After the 10.10 promo, the package returns to its regular rate of ₱45,000. During this promo, you can lock in ₱19,997 for full upfront payment (saving ₱25,000), or choose the 2-payment split plan at ₱24,997 total (₱12,500 deposit now, balance upon launch).</p></div></div></div>
+      <div class="qa"><button aria-expanded="false"><span>Do I need to have my domain and hosting ready before we start?</span><span class="plus">+</span></button><div class="a"><div><p>Yes, you will need a domain name (e.g., yourname.com) and a WordPress-compatible hosting account. If you don't have these set up yet, don't worry—I will send you a quick 2-minute setup guide as soon as you reserve your slot.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="cta-card">
+    <h2>Give your mission an online home that <em>works while you stay present.</em></h2>
+    <p>Limited 10.10 Slots Available · Web Funnel Engine &amp; Intuitive Sessions</p>
+    <a href="https://calendly.com/rmrvergara/10-10-alignment-review-slot-reservation" class="btn btn-gold js-book" style="margin-top:8px;padding:17px 30px;font-size:16px">Reserve Your 10.10 Slot Now →</a>
+  </div>
+  <div class="fgrid">
+    <div class="fcol fbrand">
+      <img src="https://chellevergara.com/wp-content/uploads/2026/10/chelle-2.png" alt="Chelle Vergara">
+      <p>Precision Web Systems &amp; Intuitive Energy Work</p>
+    </div>
+    <div class="fcol">
+      <span class="mono">NAVIGATE</span>
+      <a href="#services">Services</a><a href="#process">The Process</a><a href="#offer">10.10 Offer</a><a href="#faq">FAQs</a>
+    </div>
+    <div class="fcol">
+      <span class="mono">CONNECT</span>
+      <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook Profile ↗</a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="mailto:hello@chellevergara.com">Email Me ↗</a>
+    </div>
+  </div>
+  <div class="copy">© 2026 chellevergara.com. All rights reserved. Built with precision and soul.</div>
+</footer>
+
+<div class="sticky" data-sticky aria-hidden="true">
+  <div class="bar">
+    <div class="txt">
+      <b>10.10 Specials: Web Funnels (₱19,997) &amp; Soul Sessions (₱1,997)</b>
+      <small>🔥 Reservations open for October · Quick alignment review <span data-cd-inline>0d 00:00:00</span></small>
+    </div>
+    <a href="https://calendly.com/rmrvergara/10-10-alignment-review-slot-reservation" class="btn btn-gold js-book" tabindex="-1">Reserve Your Slot →</a>
+  </div>
+</div>
+
+<div class="modal" data-modal role="dialog" aria-modal="true" aria-label="Reserve your 10.10 slot" hidden>
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div class="modal-loading">Loading calendar…</div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var CAL = 'https://calendly.com/rmrvergara/10-10-alignment-review-slot-reservation';
+  var END = new Date(new Date().getFullYear(), 9, 10, 23, 59, 59); // Oct 10, 11:59:59 PM local
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var pad = function (n) { return String(n).padStart(2, '0'); };
+
+  // Countdown
+  function tick() {
+    var d = Math.max(0, END - new Date());
+    var D = Math.floor(d / 864e5), H = pad(Math.floor(d / 36e5) % 24), M = pad(Math.floor(d / 6e4) % 60), S = pad(Math.floor(d / 1e3) % 60);
+    var map = { d: D + 'd', h: H + 'h', m: M + 'm', s: S + 's' };
+    $$('[data-cd]').forEach(function (el) { el.textContent = map[el.getAttribute('data-cd')]; });
+    $$('[data-cd-inline]').forEach(function (el) { el.textContent = D + 'd ' + H + ':' + M + ':' + S; });
+  }
+  tick(); setInterval(tick, 1000);
+
+  // Tabs
+  $$('[data-tabs]').forEach(function (list) {
+    var group = list.getAttribute('data-tabs');
+    $$('[role="tab"]', list).forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var key = btn.getAttribute('data-tab');
+        $$('[role="tab"]', list).forEach(function (b) { b.setAttribute('aria-selected', String(b === btn)); });
+        $$('[data-panel^="' + group + ':"]').forEach(function (p) { p.hidden = p.getAttribute('data-panel') !== group + ':' + key; });
+      });
+    });
+  });
+
+  // Slots
+  var slots = { web: 3, del: 5 };
+  var word = function (n) { return n === 1 ? 'Slot' : 'Slots'; };
+  function renderSlots() {
+    $$('[data-web-n]').forEach(function (e) { e.textContent = slots.web; });
+    $$('[data-del-n]').forEach(function (e) { e.textContent = slots.del; });
+    $$('[data-web-word]').forEach(function (e) { e.textContent = word(slots.web).toUpperCase(); });
+    $$('[data-del-word]').forEach(function (e) { e.textContent = word(slots.del).toUpperCase(); });
+    $$('[data-web-label]').forEach(function (e) { e.textContent = slots.web + ' ' + word(slots.web); });
+    $$('[data-del-label]').forEach(function (e) { e.textContent = slots.del + ' ' + word(slots.del); });
+    ['web', 'del'].forEach(function (k) {
+      $$('[data-bars="' + k + '"] i').forEach(function (b, i) { b.classList.toggle('on', i < slots[k]); });
+    });
+    var w = $('[data-claim="web"]'), d = $('[data-claim="del"]');
+    w.textContent = slots.web <= 1 ? 'Reserve the Final October Slot →' : 'Reserve 1 of ' + slots.web + ' October Slots →';
+    d.textContent = slots.del <= 1 ? 'Request the Final 10.10 Session →' : 'Request Your Alignment Session →';
+  }
+  function claim(kind) {
+    slots[kind] = Math.max(1, slots[kind] - 1);
+    var n = slots[kind], box = $('[data-msg="' + kind + '"]');
+    box.lastElementChild.textContent = kind === 'web'
+      ? 'A slot is on hold for your reservation — ' + n + ' October ' + (n === 1 ? 'slot' : 'slots') + ' left.'
+      : 'A session is on hold for your request — ' + n + ' 10.10 ' + (n === 1 ? 'session' : 'sessions') + ' left.';
+    box.hidden = false;
+    renderSlots();
+  }
+  renderSlots();
+
+  // Calendly modal (iframe — visitor stays on site)
+  var modal = $('[data-modal]'), box = $('.modal-box', modal), lastFocus = null;
+  function openCal() {
+    lastFocus = document.activeElement;
+    if (!$('iframe', box)) {
+      var f = document.createElement('iframe');
+      f.src = CAL + '?embed_type=Inline&hide_gdpr_banner=1&background_color=ffffff&primary_color=0f6b63&embed_domain=' + encodeURIComponent(location.hostname || 'localhost');
+      f.title = 'Reserve your 10.10 slot';
+      f.setAttribute('allow', 'payment');
+      box.appendChild(f);
+    }
+    modal.hidden = false;
+    document.body.classList.add('locked');
+    $('[data-close]', modal).focus();
+  }
+  function closeCal() {
+    modal.hidden = true;
+    document.body.classList.remove('locked');
+    if (lastFocus) lastFocus.focus();
+  }
+  $$('.js-book').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var kind = a.getAttribute('data-claim');
+      if (kind) claim(kind);
+      openCal();
+    });
+  });
+  $('[data-close]', modal).addEventListener('click', closeCal);
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeCal(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) closeCal(); });
+
+  // FAQ accordion
+  $$('[data-faq] .qa').forEach(function (qa) {
+    $('button', qa).addEventListener('click', function () {
+      var open = !qa.classList.contains('open');
+      $$('[data-faq] .qa').forEach(function (o) { o.classList.remove('open'); $('button', o).setAttribute('aria-expanded', 'false'); });
+      if (open) { qa.classList.add('open'); $('button', qa).setAttribute('aria-expanded', 'true'); }
+    });
+  });
+
+  // Sticky CTA
+  var sticky = $('[data-sticky]'), stickyBtn = $('a', sticky);
+  function onScroll() {
+    var show = window.scrollY > 640;
+    sticky.classList.toggle('show', show);
+    sticky.setAttribute('aria-hidden', String(!show));
+    stickyBtn.tabIndex = show ? 0 : -1;
+  }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+})();
+</script>
+</body>
+</html>
