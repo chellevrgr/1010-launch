@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field Notes — Kesler Go</title>
+<meta name="description" content="Essays on method, space and timing from Kesler Go's Chinese Metaphysics practice.">
+<!-- TESTING: keeps search engines from indexing the test site. Delete this line at launch. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:title" content="Field Notes — Kesler Go">
+<meta property="og:description" content="Essays on method, space and timing from Kesler Go's Chinese Metaphysics practice.">
+<meta property="og:image" content="assets/img/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Figtree:wght@400;500&amp;family=Jost:wght@400;500&amp;family=Libre+Baskerville:ital,wght@0,400;1,400&amp;display=swap">
+<style>
+body{margin:0;background:#fffff9}
+a{color:#000}a:hover{color:#b00101}
+.nav{font-family:'Soleil','Figtree',sans-serif;font-size:14px;color:#000;text-decoration:none;padding:12px 0;border-bottom:2px solid transparent;transition:color .2s ease,border-color .2s ease}
+.nav:hover{color:#610303;border-bottom-color:#610303}
+.nav-on,.nav-on:hover{color:#610303;border-bottom-color:#610303}
+.cta{font-family:'Futura','Futura PT','Jost',sans-serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#000;border:1px solid #000;padding:13px 20px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:background .2s ease,color .2s ease}
+.cta:hover,button[type="submit"]:hover{background:#610303 !important;border-color:#610303 !important;color:#fffff9 !important}
+.tl{font-family:'Soleil','Figtree',sans-serif;font-size:15px;color:#000;text-decoration:none;border-bottom:1px solid #000;padding:10px 0 4px;display:inline-flex;align-items:center;gap:8px}
+.tl:hover{color:#b00101;border-bottom-color:#b00101}
+.fl{color:#fffce1;text-decoration:none}.fl:hover{color:#c59e3e}
+a:focus-visible{outline:2px solid #b00101;outline-offset:3px}
+/* Motion: subtle and formal; switched off for visitors who prefer reduced motion */
+@keyframes kgRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes kgFade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:no-preference){
+header{animation:kgFade .7s ease-out both}
+section:first-of-type>div>*{animation:kgRise 1s cubic-bezier(.2,.65,.2,1) both}
+section:first-of-type>div>*:nth-child(2){animation-delay:.15s}
+section:first-of-type>div>*:nth-child(3){animation-delay:.3s}
+section:first-of-type>div>*:nth-child(n+4){animation-delay:.45s}
+@supports (animation-timeline:view()){
+section:not(:first-of-type)>div>*,footer>div>*{animation:kgRise linear both;animation-timeline:view();animation-range:entry 5% cover 25%}
+}
+img{transition:transform .9s cubic-bezier(.2,.65,.2,1)}
+figure:hover img,a:hover>img{transform:scale(1.015)}
+a[style*="border-top"]{transition:border-color .4s ease,transform .4s ease}
+a[style*="border-top"]:hover{border-top-color:#610303 !important;transform:translateY(-3px)}
+.tl svg,.cta svg{transition:transform .3s ease}
+.tl:hover svg,.cta:hover svg{transform:translateX(4px)}
+}
+/* Phone layout (760px and narrower): single column, centred header/titles/footer, nothing fixed-size */
+@media (max-width:760px){
+body{overflow-x:hidden}
+[style*="position: absolute"]{position:static !important;left:auto !important;top:auto !important}
+:is(section,header,footer,nav,article,aside,figure,form,fieldset,dl,dd,dt,div,p,h1,h2,h3,blockquote,ul,li){height:auto !important;min-height:0 !important;max-width:100% !important}
+:is(section,footer,div,nav,dl,dd,form,figure,p,aside){width:auto !important}
+section{padding:56px 20px !important}
+header>div{padding:14px 20px !important;flex-direction:column !important;justify-content:center !important;gap:8px !important}
+header nav{justify-content:center !important;gap:0 18px !important}
+header .nav{font-size:15px !important;padding:12px 0 !important}
+header .cta{margin-top:6px}
+section:first-of-type :is(h1,h2,p,div,dl,dt,dd):not(form,form *){text-align:center !important}
+section:first-of-type [style*="display: flex"]:not(form,form *){justify-content:center !important}
+section:first-of-type p[style*="margin-top"]{margin-top:0 !important}
+h1{font-size:clamp(38px,11vw,54px) !important;line-height:1.08 !important;width:auto !important}
+h2:not([style*="uppercase"]){font-size:clamp(24px,7vw,30px) !important;line-height:1.2 !important}
+:is(p,div,dd,li,blockquote,span)[style*="font-size: 2"]{font-size:19px !important;line-height:1.5 !important}
+:is(p,div,dd,blockquote)[style*="font-size: 3"]{font-size:23px !important;line-height:1.3 !important}
+[style*="font-size: 11px"]{font-size:12px !important}
+[style*="flex: 0 0"]{flex-basis:100% !important}
+img{max-width:100% !important}
+figure img{width:100% !important;height:auto !important;flex-basis:100% !important}
+.tl{padding:12px 0 6px !important}
+dd a{display:inline-block;padding:10px 0}
+.bz-grid{min-width:0 !important;grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+.bz-grid>div{border-bottom:1px solid #e8d4a4}
+aside{justify-content:center !important;text-align:center}
+footer{padding:56px 20px 32px !important;text-align:center}
+footer [style*="display: flex"],footer [style*="display: grid"]{justify-content:center !important;align-items:center !important}
+footer img{margin:0 auto}
+footer p{margin-left:auto !important;margin-right:auto !important}
+footer a{display:inline-block;padding:6px 0}
+header nav .cta{flex:0 0 100%;max-width:240px;justify-content:center;margin:6px auto 0 !important;font-size:14px !important}
+section:first-of-type p[style*="uppercase"]{display:block !important}
+section:first-of-type p[style*="uppercase"]>span{display:inline-block;margin-right:10px;vertical-align:middle}
+h1{text-wrap:balance}
+section:first-of-type [style*="margin-top: 120px"]{margin-top:48px !important}
+form button[type="submit"]{width:100%}
+form div:has(>button[type="submit"]){justify-content:center !important;text-align:center}
+}
+</style>
+<style>
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%}
+[hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div style="font-family: 'EB Garamond', Garamond, serif; font-size: 19px; line-height: 1.6; color: #000; background: #fffff9">
+
+<header style="border-bottom: 1px solid #000">
+<div style="max-width: 1280px; margin: 0 auto; padding: 16px clamp(24px, 6vw, 96px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 40px">
+<a href="index.html" style="display: inline-flex; align-items: center; padding: 4px 0"><img src="assets/img/logo.png" alt="Kesler Go — Feng Shui, Bazi, Date Selection, I-Ching" style="display: block; height: 56px; width: auto"></a><nav aria-label="Primary" style="display: flex; flex-wrap: wrap; gap: 4px 28px; align-items: center">
+<a class="nav" href="index.html" style="font-size: 18px">Home</a>
+<a class="nav" href="services.html" style="font-size: 18px">Services</a>
+<a class="nav" href="about.html" style="font-size: 18px">About</a>
+<a class="nav nav-on" href="field-notes.html" aria-current="page" style="font-size: 18px">Field Notes</a>
+<a class="nav" href="bazi-calculator.html" style="font-size: 18px">Bazi Calculator</a>
+<a class="cta" href="contact.html" style="padding: 11px 18px; font-size: 17px">Get in Touch</a>
+</nav>
+
+</div>
+</header>
+
+<section style="padding: 128px clamp(24px, 6vw, 96px) 80px; padding-top: 100px; min-height: 292px">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-end">
+<div style="flex: 7 1 520px; min-width: 0">
+<p style="margin: 0 0 32px; display: flex; align-items: center; gap: 12px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 15px; letter-spacing: 0.26em; text-transform: uppercase"><span style="width: 7px; height: 7px; background: #b00101; flex-shrink: 0"></span>Field Notes</p>
+<h1 style="margin: 0; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-weight: 500; font-size: 80px; line-height: 1.0; letter-spacing: -0.025em">Notes from <br>practice</h1>
+</div>
+<p style="margin: 0; flex: 5 1 340px; font-size: 25px; line-height: 1.5; color: #000">Essays on method, space and timing — <br>for readers who already know the vocabulary and want the reasoning behind it.</p>
+</div>
+</section>
+
+<section aria-label="Essays" style="padding: 0 clamp(24px, 6vw, 96px) 136px; min-height: 1793px">
+<div style="max-width: 1280px; margin: 0 auto; border-top: 1px solid #000">
+
+<article aria-labelledby="e1" style="display: flex; flex-wrap: wrap; gap: 24px 64px; padding: 64px 0; border-bottom: 1px solid #e8d4a4">
+<div style="flex: 0 0 200px; display: flex; flex-direction: column; gap: 6px; font-family: 'Soleil', 'Figtree', sans-serif; font-size: 13px; color: #000">
+<span style="font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #000">Feng Shui</span>
+<span>October 2026</span>
+<span>9 min read</span>
+</div>
+<div style="flex: 1 1 560px; min-width: 0; max-width: 780px">
+<h2 id="e1" style="margin: 0 0 24px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-weight: 500; font-size: 40px; line-height: 1.2; letter-spacing: -0.01em">The building receives you before the room does</h2>
+<p style="margin: 0 0 20px; font-size: 21px; line-height: 1.65">Most audits that go wrong do so by starting inside. The kitchen, the bedroom, the desk — these are where clients feel the problem, so it is natural to look there first. But a building’s relationship to its approach, its facing and its first threshold sets the terms for everything behind them.</p>
+<p style="margin: 0 0 28px; font-size: 21px; line-height: 1.65; color: #000">In practice, a surprising share of what clients describe as an internal problem traces back to the first few metres: how the entrance is reached, what it faces, and what it opens onto. Rearranging furniture rarely resolves what the front door has already decided.</p>
+<blockquote style="margin: 0 0 28px; padding-left: 0; border-top: 1px solid #c59e3e; padding-top: 20px; font-style: italic; font-size: 26px; line-height: 1.4">“Furniture is a conversation inside a sentence the front door has already written.”</blockquote>
+<a class="tl" href="field-notes.html">Continue reading</a>
+</div>
+</article>
+
+<article aria-labelledby="e2" style="display: flex; flex-wrap: wrap; gap: 24px 64px; padding: 64px 0; border-bottom: 1px solid #e8d4a4">
+<div style="flex: 0 0 200px; display: flex; flex-direction: column; gap: 6px; font-family: 'Soleil', 'Figtree', sans-serif; font-size: 13px; color: #000">
+<span style="font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #000">Date Selection</span>
+<span>September 2026</span>
+<span>7 min read</span>
+</div>
+<div style="flex: 1 1 560px; min-width: 0; max-width: 780px">
+<h2 id="e2" style="margin: 0 0 24px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-weight: 500; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.2; letter-spacing: -0.01em">The best date is often the second-best date</h2>
+<p style="margin: 0 0 20px; font-size: 21px; line-height: 1.65">Clients sometimes arrive expecting a single correct day. The almanac rarely offers one. What it offers is a ranked field of candidates, each with trade-offs against the people involved and the constraints already fixed — a lawyer’s availability, a lender’s timeline, a lease that ends when it ends.</p>
+<p style="margin: 0 0 28px; font-size: 21px; line-height: 1.65; color: #000">A theoretically ideal date that forces a rushed signing is worse than a sound one that lets the work be done properly. Date Selection is a scheduling discipline; it should make a plan more robust, not more fragile.</p>
+<blockquote style="margin: 0 0 28px; border-top: 1px solid #c59e3e; padding-top: 20px; font-style: italic; font-size: 26px; line-height: 1.4">“A good date does not make a weak decision strong. It removes avoidable friction from a sound one.”</blockquote>
+<a class="tl" href="field-notes.html">Continue reading</a>
+</div>
+</article>
+
+<article aria-labelledby="e3" style="display: flex; flex-wrap: wrap; gap: 24px 64px; padding: 64px 0; border-bottom: 1px solid #000">
+<div style="flex: 0 0 200px; display: flex; flex-direction: column; gap: 6px; font-family: 'Soleil', 'Figtree', sans-serif; font-size: 13px; color: #000">
+<span style="font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #000">Bazi</span>
+<span>August 2026</span>
+<span>11 min read</span>
+</div>
+<div style="flex: 1 1 560px; min-width: 0; max-width: 780px">
+<h2 id="e3" style="margin: 0 0 24px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-weight: 500; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.15; letter-spacing: -0.01em">Why a chart calculator is not a reading</h2>
+<p style="margin: 0 0 20px; font-size: 21px; line-height: 1.65">Generating the Four Pillars is arithmetic. Anyone with the date, time and place of birth can produce the eight characters in seconds. What follows is not arithmetic: judging the strength of the Day Master against its season, identifying what the chart needs, and reading how the luck pillars and the current year move through it.</p>
+<p style="margin: 0 0 28px; font-size: 21px; line-height: 1.65; color: #000">This is why the calculator on this site stops at the chart. Two identical-looking structures can call for opposite conclusions once season and combination are weighed. Automated summaries collapse that difference, and with it most of the value.</p>
+<blockquote style="margin: 0 0 28px; border-top: 1px solid #c59e3e; padding-top: 20px; font-style: italic; font-size: 26px; line-height: 1.4">“The eight characters are the evidence. The reading is the judgment.”</blockquote>
+<a class="tl" href="field-notes.html">Continue reading</a>
+</div>
+</article>
+
+</div>
+</section>
+
+<footer style="background: #000; color: #fffce1; padding: 96px clamp(24px, 6vw, 96px) 48px; font-family: 'Soleil', 'Figtree', sans-serif; font-size: 14px; line-height: 1.7">
+<div style="max-width: 1280px; margin: 0 auto">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; padding-bottom: 56px; border-bottom: 1px solid #c0a460">
+<div>
+<p style="margin: 0 0 20px"><img src="assets/img/logo.png" alt="Kesler Go — Feng Shui, Bazi, Date Selection, I-Ching" style="display: block; height: 68px; width: auto"></p>
+<p style="margin: 0; max-width: 260px; color: #e8d4a4">Chinese Metaphysics advisory and decision intelligence.</p>
+</div>
+<div>
+<p style="margin: 0 0 14px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase; color: #c59e3e">Location</p>
+<p style="margin: 0">The Healing House at Palma<br>Makati, Philippines<br>By appointment only</p>
+</div>
+<div>
+<p style="margin: 0 0 14px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase; color: #c59e3e">Correspondence</p>
+<p style="margin: 0; display: flex; flex-direction: column; gap: 4px"><a class="fl" href="contact.html">Send an Inquiry</a><a class="fl" href="https://instagram.com/fengshui.go">Instagram: @fengshui.go</a><a class="fl" href="mailto:kesler@keslergo.com">Email: kesler@keslergo.com</a></p>
+</div>
+<div>
+<p style="margin: 0 0 14px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase; color: #c59e3e">Index</p>
+<p style="margin: 0; display: flex; flex-direction: column; gap: 4px">
+<a class="fl" href="index.html">Home</a>
+<a class="fl" href="services.html">Services</a>
+<a class="fl" href="about.html">About</a>
+<a class="fl" href="field-notes.html">Field Notes</a>
+<a class="fl" href="bazi-calculator.html">Bazi Calculator</a>
+<a class="fl" href="contact.html">Contact</a>
+</p>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 48px; padding-top: 32px; font-size: 13px; color: #e8d4a4">
+<p style="margin: 0; max-width: 760px">This reading is for informational and advisory purposes only. It is not a substitute for professional financial, legal, medical, or psychological advice. All decisions remain the client’s alone.</p>
+<p style="margin: 0">© 2026 Kesler Go</p>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
