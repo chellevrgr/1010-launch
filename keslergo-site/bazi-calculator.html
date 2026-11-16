@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bazi Calculator — Kesler Go</title>
+<meta name="description" content="Generate your Four Pillars (Bazi) chart from your date, time and place of birth.">
+<!-- TESTING: keeps search engines from indexing the test site. Delete this line at launch. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:title" content="Bazi Calculator — Kesler Go">
+<meta property="og:description" content="Generate your Four Pillars (Bazi) chart from your date, time and place of birth.">
+<meta property="og:image" content="assets/img/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Figtree:wght@400;500&amp;family=Jost:wght@400;500&amp;family=Libre+Baskerville:ital,wght@0,400;1,400&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400&amp;text=甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥時日月年柱&amp;display=swap">
+<style>
+body{margin:0;background:#fffff9}
+a{color:#000}a:hover{color:#b00101}
+.nav{font-family:'Soleil','Figtree',sans-serif;font-size:14px;color:#000;text-decoration:none;padding:12px 0;border-bottom:2px solid transparent;transition:color .2s ease,border-color .2s ease}
+.nav:hover{color:#610303;border-bottom-color:#610303}
+.nav-on,.nav-on:hover{border-bottom-color:#c59e3e}
+.cta{font-family:'Futura','Futura PT','Jost',sans-serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#000;border:1px solid #000;padding:13px 20px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:background .2s ease,color .2s ease}
+.cta:hover,button[type="submit"]:hover{background:#610303 !important;border-color:#610303 !important;color:#fffff9 !important}
+.fl{color:#fffce1;text-decoration:none}.fl:hover{color:#c59e3e}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #b00101;outline-offset:2px}
+button{cursor:pointer}
+input,select,button{font-family:'Soleil','Figtree',sans-serif}
+input:disabled{background:#fffce1;color:#c0a460}
+</style>
+<style>
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%}
+[hidden]{display:none !important}
+@media (max-width:760px){
+  h1{font-size:clamp(40px,11vw,64px) !important;width:auto !important}
+  h2{word-break:normal}
+  figure img{width:100% !important;max-width:100% !important;height:auto !important;flex-basis:100% !important}
+}
+</style>
+<script src="assets/js/bazi.js" defer></script>
+</head>
+<body>
+<div style="font-family: 'EB Garamond', Garamond, serif; font-size: 19px; line-height: 1.6; color: #000; background: #fffff9">
+
+<header style="border-bottom: 1px solid #000">
+<div style="max-width: 1280px; margin: 0 auto; padding: 16px clamp(24px, 6vw, 96px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 40px">
+<a href="index.html" style="display: inline-flex; align-items: center; padding: 4px 0"><img src="assets/img/logo.png" alt="Kesler Go — Feng Shui, Bazi, Date Selection, I-Ching" style="display: block; height: 56px; width: auto"></a>
+<nav aria-label="Primary" style="display: flex; flex-wrap: wrap; gap: 4px 28px; align-items: center">
+<a class="nav" href="services.html">Services</a>
+<a class="nav" href="about.html">About</a>
+<a class="nav" href="field-notes.html">Field Notes</a>
+<a class="nav nav-on" href="bazi-calculator.html" aria-current="page">Bazi Calculator</a>
+<a class="cta" href="contact.html" style="padding: 11px 18px">Get in Touch</a>
+</nav>
+</div>
+</header>
+
+<section style="padding: 112px clamp(24px, 6vw, 96px) 64px">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-end">
+<div style="flex: 7 1 520px; min-width: 0">
+<p style="margin: 0 0 32px; display: flex; align-items: center; gap: 12px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 15px; letter-spacing: 0.26em; text-transform: uppercase"><span style="width: 7px; height: 7px; background: #b00101; flex-shrink: 0"></span>Tool · Four Pillars</p>
+<h1 style="margin: 0; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-weight: 500; font-size: 100px; line-height: 1.0; letter-spacing: -0.025em">Bazi Calculator</h1>
+</div>
+<p style="margin: 0; flex: 5 1 340px; font-size: 27px; line-height: 1.55; color: #000; padding-top: 0px; margin-top: 70px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px">Generates the baseline chart — the eight characters of your Four Pillars. It offers no interpretation; that is the work of a reading.</p>
+</div>
+</section>
+
+<section aria-label="Calculator" style="padding: 0 clamp(24px, 6vw, 96px) 136px">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start; border-top: 1px solid #000; padding-top: 40px">
+
+<form id="bz-form" novalidate style="flex: 4 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 28px; font-family: 'Soleil', 'Figtree', sans-serif; font-size: 15px">
+<fieldset style="margin: 0; padding: 0; border: 0">
+<legend style="padding: 0; margin-bottom: 10px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase">Date of birth</legend>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<label for="bz-y" style="font-size: 12px; color: #000">Year</label>
+<input id="bz-y" type="number" inputmode="numeric" min="1900" max="2100" style="height: 48px; padding: 0 12px; border: 1px solid #000; background: #fffff9; font-size: 16px; color: #000; border-radius: 0; box-sizing: border-box; width: 100%">
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<label for="bz-m" style="font-size: 12px; color: #000">Month</label>
+<input id="bz-m" type="number" inputmode="numeric" min="1" max="12" style="height: 48px; padding: 0 12px; border: 1px solid #000; background: #fffff9; font-size: 16px; color: #000; border-radius: 0; box-sizing: border-box; width: 100%">
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<label for="bz-d" style="font-size: 12px; color: #000">Day</label>
+<input id="bz-d" type="number" inputmode="numeric" min="1" max="31" style="height: 48px; padding: 0 12px; border: 1px solid #000; background: #fffff9; font-size: 16px; color: #000; border-radius: 0; box-sizing: border-box; width: 100%">
+</div>
+</div>
+</fieldset>
+
+<fieldset style="margin: 0; padding: 0; border: 0">
+<legend style="padding: 0; margin-bottom: 10px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase">Time of birth · 24-hour</legend>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<label for="bz-h" style="font-size: 12px; color: #000">Hour</label>
+<input id="bz-h" type="number" inputmode="numeric" min="0" max="23" style="height: 48px; padding: 0 12px; border: 1px solid #000; background: #fffff9; font-size: 16px; color: #000; border-radius: 0; box-sizing: border-box; width: 100%">
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<label for="bz-min" style="font-size: 12px; color: #000">Minute</label>
+<input id="bz-min" type="number" inputmode="numeric" min="0" max="59" style="height: 48px; padding: 0 12px; border: 1px solid #000; background: #fffff9; font-size: 16px; color: #000; border-radius: 0; box-sizing: border-box; width: 100%">
+</div>
+</div>
+<label for="bz-unknown" style="margin-top: 10px; display: flex; align-items: center; gap: 12px; min-height: 44px; cursor: pointer">
+<input id="bz-unknown" type="checkbox" style="width: 18px; height: 18px; margin: 0; accent-color: #000">
+Birth time unknown
+</label>
+</fieldset>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="bz-city" style="font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase">Place of birth</label>
+<select id="bz-city" style="height: 48px; padding: 0 12px; border: 1px solid #000; background: #fffff9; font-size: 16px; color: #000; border-radius: 0; box-sizing: border-box; width: 100%">
+<option value="0">Manila, Philippines</option>
+<option value="1">Quezon City, Philippines</option>
+<option value="2">Cebu City, Philippines</option>
+<option value="3">Davao City, Philippines</option>
+<option value="4">Hong Kong</option>
+<option value="5">Taipei, Taiwan</option>
+<option value="6">Shanghai, China</option>
+<option value="7">Beijing, China</option>
+<option value="8">Singapore</option>
+<option value="9">Kuala Lumpur, Malaysia</option>
+<option value="10">Jakarta, Indonesia</option>
+<option value="11">Bangkok, Thailand</option>
+<option value="12">Tokyo, Japan</option>
+<option value="13">Sydney, Australia</option>
+<option value="14">Dubai, UAE</option>
+<option value="15">London, United Kingdom</option>
+<option value="16">New York, United States</option>
+<option value="17">Los Angeles, United States</option>
+<option value="18">Toronto, Canada</option>
+</select>
+<p style="margin: 0; font-size: 13px; line-height: 1.55; color: #000">Used to correct the clock to true solar time. Standard time is assumed; if daylight saving applied at birth, subtract one hour.</p>
+</div>
+
+<button type="submit" style="height: 52px; border: 1px solid #000; background: #000; color: #fffff9; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; border-radius: 0">Generate chart</button>
+</form>
+
+<div style="flex: 8 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 40px" aria-live="polite">
+
+<div id="bz-error" role="alert" hidden style="border: 1px solid #b00101; padding: 20px 24px; color: #b00101; font-family: 'Soleil', 'Figtree', sans-serif; font-size: 15px"></div>
+<div id="bz-output"></div>
+
+<aside aria-label="About this tool" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px 32px; background: #fffce1; border: 1px solid #e8d4a4; padding: 28px">
+<p style="margin: 0; flex: 1 1 320px; font-size: 20px; line-height: 1.5">This tool generates the baseline chart only. Interpretation is the work of a reading with Kesler.</p>
+<a class="cta" href="contact.html">Send an Inquiry</a>
+</aside>
+
+</div>
+</div>
+</section>
+
+<footer style="background: #000; color: #fffce1; padding: 96px clamp(24px, 6vw, 96px) 48px; font-family: 'Soleil', 'Figtree', sans-serif; font-size: 14px; line-height: 1.7">
+<div style="max-width: 1280px; margin: 0 auto">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; padding-bottom: 56px; border-bottom: 1px solid #c0a460">
+<div>
+<p style="margin: 0 0 20px"><img src="assets/img/logo.png" alt="Kesler Go — Feng Shui, Bazi, Date Selection, I-Ching" style="display: block; height: 68px; width: auto"></p>
+<p style="margin: 0; max-width: 260px; color: #e8d4a4">Chinese Metaphysics advisory and decision intelligence.</p>
+</div>
+<div>
+<p style="margin: 0 0 14px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase; color: #c59e3e">Location</p>
+<p style="margin: 0">The Healing House at Palma<br>Makati, Philippines<br>By appointment only</p>
+</div>
+<div>
+<p style="margin: 0 0 14px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase; color: #c59e3e">Correspondence</p>
+<p style="margin: 0; display: flex; flex-direction: column; gap: 4px"><a class="fl" href="contact.html">Send an Inquiry</a><a class="fl" href="https://instagram.com/fengshui.go">Instagram: @fengshui.go</a><a class="fl" href="mailto:kesler@keslergo.com">Email: kesler@keslergo.com</a></p>
+</div>
+<div>
+<p style="margin: 0 0 14px; font-family: 'Futura', 'Futura PT', 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase; color: #c59e3e">Index</p>
+<p style="margin: 0; display: flex; flex-direction: column; gap: 4px">
+<a class="fl" href="index.html">Home</a>
+<a class="fl" href="services.html">Services</a>
+<a class="fl" href="about.html">About</a>
+<a class="fl" href="field-notes.html">Field Notes</a>
+<a class="fl" href="bazi-calculator.html">Bazi Calculator</a>
+<a class="fl" href="contact.html">Contact</a>
+</p>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 48px; padding-top: 32px; font-size: 13px; color: #e8d4a4">
+<p style="margin: 0; max-width: 760px">This reading is for informational and advisory purposes only. It is not a substitute for professional financial, legal, medical, or psychological advice. All decisions remain the client’s alone.</p>
+<p style="margin: 0">© 2026 Kesler Go</p>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
